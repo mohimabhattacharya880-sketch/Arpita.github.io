@@ -262,7 +262,10 @@ export default function MemoryScreen({ onRestart }: MemoryScreenProps) {
           ))}
         </div>
       </section>
-      <footer className="memory-footer"><span>MADE WITH LOVE</span><i>♡</i><span>JUST FOR ARPITA</span></footer>
+      <footer className="memory-footer">
+        <div className="memory-footer-message"><span>MADE WITH LOVE</span><i>♡</i><span>JUST FOR ARPITA</span></div>
+        <span className="memory-footer-credit">Created with love by Locknath Datta</span>
+      </footer>
       {activePhoto && <Lightbox photo={activePhoto} onClose={() => setActivePhoto(null)} />}
     </main>
   )
