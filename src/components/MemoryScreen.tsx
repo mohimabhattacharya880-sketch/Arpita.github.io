@@ -143,10 +143,7 @@ function HeartTreeCanvas() {
 
 function PlaceholderArtwork({ photo }: { photo: BirthdayPhoto }) {
   if (photo.image) {
-    const imageSource = photo.image.startsWith('/')
-      ? `${import.meta.env.BASE_URL}${photo.image.slice(1)}`
-      : photo.image
-    return <img className="photo-image" src={imageSource} alt="" />
+    return <img className="photo-image" src={photo.image} alt={photo.caption} />
   }
 
   return (
