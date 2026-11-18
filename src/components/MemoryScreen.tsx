@@ -262,6 +262,21 @@ export default function MemoryScreen({ onRestart }: MemoryScreenProps) {
           ))}
         </div>
       </section>
+      <section className="music-section" aria-labelledby="music-title">
+        <div className="gallery-heading">
+          <span>A LITTLE SONG FOR YOU</span>
+          <h2 id="music-title">A moment of <em>music</em></h2>
+        </div>
+        <iframe
+          className="music-player"
+          src="https://www.youtube-nocookie.com/embed/qJa_WD5mNho?start=54&end=90&rel=0&playsinline=1"
+          title="Bairi Piya — selected song"
+          allow="encrypted-media; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          loading="lazy"
+        />
+      </section>
       <footer className="memory-footer">
         <div className="memory-footer-message"><span>MADE WITH LOVE</span><i>♡</i><span>JUST FOR ARPITA</span></div>
         <span className="memory-footer-credit">Created with love by Locknath Datta</span>
