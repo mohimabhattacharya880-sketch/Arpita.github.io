@@ -269,9 +269,9 @@ export default function MemoryScreen({ onRestart }: MemoryScreenProps) {
         </div>
         <iframe
           className="music-player"
-          src="https://www.youtube-nocookie.com/embed/qJa_WD5mNho?start=54&end=90&rel=0&playsinline=1"
+          src="https://www.youtube-nocookie.com/embed/qJa_WD5mNho?autoplay=1&controls=1&start=54&end=90&rel=0&playsinline=1"
           title="Bairi Piya — selected song"
-          allow="encrypted-media; picture-in-picture; web-share"
+          allow="autoplay; encrypted-media; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
           loading="lazy"
