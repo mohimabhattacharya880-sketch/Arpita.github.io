@@ -202,6 +202,22 @@ export default function MemoryScreen({ onRestart }: MemoryScreenProps) {
         <h1>For your <em>beautiful</em> year</h1>
         <p>Every heart holds a wish, and every wish is for you.</p>
       </header>
+      <section className="music-section" aria-labelledby="music-title">
+        <div className="gallery-heading">
+          <span>A LITTLE SONG FOR YOU</span>
+          <h2 id="music-title">A moment of <em>music</em></h2>
+          <p>If music doesn't start automatically, tap play.</p>
+        </div>
+        <iframe
+          className="music-player"
+          src="https://www.youtube-nocookie.com/embed/qJa_WD5mNho?autoplay=1&controls=1&start=54&end=90&rel=0&playsinline=1"
+          title="Bairi Piya — selected song"
+          allow="autoplay; encrypted-media; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          loading="eager"
+        />
+      </section>
       <section className="memory-stage" aria-label="Birthday wishes and memories">
         <aside className="message-column" aria-label="Birthday wishes">
           {birthdayMessages.slice(0, 2).map((message, index) => (
@@ -261,21 +277,6 @@ export default function MemoryScreen({ onRestart }: MemoryScreenProps) {
             </button>
           ))}
         </div>
-      </section>
-      <section className="music-section" aria-labelledby="music-title">
-        <div className="gallery-heading">
-          <span>A LITTLE SONG FOR YOU</span>
-          <h2 id="music-title">A moment of <em>music</em></h2>
-        </div>
-        <iframe
-          className="music-player"
-          src="https://www.youtube-nocookie.com/embed/qJa_WD5mNho?autoplay=1&controls=1&start=54&end=90&rel=0&playsinline=1"
-          title="Bairi Piya — selected song"
-          allow="autoplay; encrypted-media; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          loading="lazy"
-        />
       </section>
       <footer className="memory-footer">
         <div className="memory-footer-message"><span>MADE WITH LOVE</span><i>♡</i><span>JUST FOR ARPITA</span></div>
